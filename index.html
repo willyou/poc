@@ -1,12 +1,17 @@
-<style>
-</style>
-
+ 
 <head>
 	<link rel="stylesheet" type="text/css" href="my.css">
 	<link rel="stylesheet" type="text/css" href="layout.css">
 </head>
 
 <body>
+	
+	<div id="controll-panel">
+		<a id="controll-panel-forward" href="#">forward</a>
+		<a href="#">down</a>
+	</div>
+	 
+	
 	<div id="side-floor" class="wrapper-container">
 		<div class="panel panel1">
 			rotateX( 45deg
@@ -24,6 +29,13 @@
 <script>
 	
 	 $('#left-side').load('left-side.html');
+	 
+	 $('#controll-panel-forward').click(function(){
+	 	$('.panel1').addClass('panel1-transform'); 
+	 	$('.panel2').addClass('panel2-transform'); 
+	 });
+	 
+	 
 </script>
 <!--
 <script src="jquery.transform2d.js"></script>

@@ -4,7 +4,19 @@
 	border: 1px solid #CCC;
 	margin: 0 auto 60px;
 	position: relative;
-	perspective: 53px;
+	
+	transform: translate3d(1px,287px,1px);
+}
+
+#controll-panel {
+
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+a {
+	color: #ffffff;
 }
 
 .panel {
@@ -16,26 +28,28 @@
 	background: red;
 }
 
-.panel{
-	
+.panel {
+
 }
 
-#side-floor .panel1 {
-	transform: rotateX( 45deg ) translate3d(0px,100px,0px);
+.panel1 {
+	 
+	transition: 5s ease-in-out;
+	transform: perspective(53px) rotateX( 45deg ) translate3d(0px,100px,0px);
+}
+
+.panel1-transform {
+	transform:  rotateX( 45deg ) translate3d(0px,150px,0px);
 }
 
 .panel2 {
 	 
-    transition: 5s ease-in-out;
-	 transform: rotateY( 121deg ) translate3d( 116px, -23px, -123px ) skewY(-20deg);
+	transition: 5s ease-in-out;
+	transform: perspective(53px) rotateY( 121deg ) translate3d( 116px, -23px, -123px ) skewY(-20deg);
 }
 
-.panel2-transform {
-	 
-    transition: 5s ease-in-out;
+.panel2-transform {	 
 	transform: rotateY( 121deg ) translate3d( 20px, -23px, -123px ) skewY(-20deg);
 	background: red;
 }
 
-
- 
